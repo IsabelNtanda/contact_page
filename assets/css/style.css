@@ -13,5 +13,71 @@
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
+  background: #1a1924;
 }
+
+#app {
+  max-width: 43rem;
+  width: 100%;
+  padding: 0px 0px 3.2rem;
+  border-radius: 0.8rem;
+  margin: 6rem auto;
+  background: #1a1924;
+ 
+}
+header {
+  background: #16151e;
+  border-radius: 0.8rem;
+  padding: 40px;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-actions span {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3rem;
+
+  color: #e1e1e6;
+}
+
+.contact-actions .actions {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.4rem;
+  width: 100%;
+  background: #24243d;
+  padding: 16px 24px;
+  border-radius: 0.5rem;
+}
+
+.search input {
+  all: unset;
+  width: 100%;
+  color: #e1e1e6;
+}
+
+.search input::placeholder {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #e1e1e6;
+}
+
 
