@@ -80,4 +80,68 @@ header {
   color: #e1e1e6;
 }
 
+main {
+  padding: 4.8rem 4rem 0px;
+  color: #e1e1e6;
+  overflow: auto;
+  max-height: 20rem;
+  margin-right: 4rem;
+  background-color: ye;
+}
 
+.group {
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.group span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+  gap: 1rem;
+  width: 4rem;
+  border-radius: 0.8rem;
+}
+.group:nth-child(odd) span {
+  background: #07847e;
+}
+
+.group:nth-child(even) span {
+  background: #633bbc;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.contacts-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contacts-details strong {
+  line-height: 1.9rem;
+  color: #e1e1e6;
+}
+
+.contacts-details p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #8c8cba;
+}
+
+::-webkit-scrollbar{
+  width: .8rem;
+  height:.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(240, 25%, 21%, 1);
+  border-radius: 999px;
+}
