@@ -25,6 +25,8 @@ body {
   background: #1a1924;
  
 }
+
+
 header {
   background: #16151e;
   border-radius: 0.8rem;
@@ -82,13 +84,12 @@ header {
 
 main {
   padding: 4.8rem 4rem 0px;
+}
+.all-groups{
   color: #e1e1e6;
   overflow: auto;
   max-height: 20rem;
-  margin-right: 4rem;
-  background-color: ye;
 }
-
 .group {
   display: flex;
   align-items: center;
