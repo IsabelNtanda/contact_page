@@ -8,6 +8,8 @@
 
 :root {
   font-size: 62.5%;
+  --text-color: #e1e1e6;
+  --number-color: #8c8cba;
 }
 
 body {
@@ -41,7 +43,7 @@ header {
   font-size: 2rem;
   line-height: 2.3rem;
 
-  color: #e1e1e6;
+  color: var(--text-color);
 }
 
 .contact-actions .actions {
@@ -62,34 +64,34 @@ header {
   margin-top: 2.4rem;
   width: 100%;
   background: #24243d;
-  padding: 16px 24px;
+  padding: 1.6rem 2.4rem;
   border-radius: 0.5rem;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .search input {
   all: unset;
   width: 100%;
-  color: #e1e1e6;
+  color: var(--text-color);
 }
 .search:focus,
-.search:hover{
-outline: 1px solid #e1e1e6 ;
+.search:hover {
+  outline: 1px solid var(--text-color);
 }
 .search input::placeholder {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.4rem;
-  color: #e1e1e6;
+  color: var(--text-color);
 }
 
 main {
   padding: 4.8rem 4rem 0px;
+  color: var(--text-color);
 }
-.all-groups{
-  color: #e1e1e6;
+.all-groups {
   overflow: auto;
-  height:350px;
+  height: 350px;
 }
 .group {
   display: flex;
@@ -106,6 +108,7 @@ main {
   gap: 1rem;
   width: 4rem;
   border-radius: 0.8rem;
+  color: var(--text-color);
 }
 .group:nth-child(odd) span {
   background: #07847e;
@@ -115,11 +118,11 @@ main {
   background: #633bbc;
 }
 
-.group-wrapper{
+.group-wrapper {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  }
+}
 .contacts {
   display: flex;
   align-items: center;
@@ -133,19 +136,19 @@ main {
 
 .contacts-details strong {
   line-height: 1.9rem;
-  color: #e1e1e6;
+  color: var(--text-color);
 }
 
 .contacts-details p {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.4rem;
-  color: #8c8cba;
+  color: var(--number-color);
 }
 
-::-webkit-scrollbar{
-  width: .8rem;
-  height:.5rem;
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
