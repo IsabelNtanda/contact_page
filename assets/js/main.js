@@ -1,6 +1,6 @@
 ScrollReveal({
-  origin:'bottom',
-  distance:'30px',
+  origin:'top',
+  distance:'50px',
   duration:1500,
 
-}).reveal('.cards, .bottom-content, button, p, h3')
+}).reveal('#app')

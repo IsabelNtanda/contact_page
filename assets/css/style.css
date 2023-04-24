@@ -13,7 +13,7 @@
 body {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  background: #1a1924;
+  background: #24243d;
 }
 
 #app {
@@ -21,12 +21,9 @@ body {
   width: 100%;
   padding: 0px 0px 3.2rem;
   border-radius: 0.8rem;
-  margin: 6rem auto;
+  margin: 2rem auto;
   background: #1a1924;
- 
 }
-
-
 header {
   background: #16151e;
   border-radius: 0.8rem;
@@ -67,6 +64,7 @@ header {
   background: #24243d;
   padding: 16px 24px;
   border-radius: 0.5rem;
+  transition: .4s;
 }
 
 .search input {
@@ -74,7 +72,10 @@ header {
   width: 100%;
   color: #e1e1e6;
 }
-
+.search:focus,
+.search:hover{
+outline: 1px solid #e1e1e6 ;
+}
 .search input::placeholder {
   font-weight: 400;
   font-size: 1.2rem;
@@ -88,7 +89,7 @@ main {
 .all-groups{
   color: #e1e1e6;
   overflow: auto;
-  max-height: 20rem;
+  height:350px;
 }
 .group {
   display: flex;
@@ -114,6 +115,11 @@ main {
   background: #633bbc;
 }
 
+.group-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  }
 .contacts {
   display: flex;
   align-items: center;
@@ -146,3 +152,4 @@ main {
   background: hsla(240, 25%, 21%, 1);
   border-radius: 999px;
 }
+
