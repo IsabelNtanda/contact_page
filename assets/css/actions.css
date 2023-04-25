@@ -1,5 +1,4 @@
 /*--------------------Cadasto-----------------------*/
-
 form{
 display: flex;
 flex-direction: column;
@@ -38,4 +37,14 @@ outline: 1px solid var(--text-color);
 }
 .submit input[type='submit']:hover{
 filter: brightness(1.2);
+}
+
+.voltar{
+font-size: 3rem;
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+text-decoration: none;
+color: white
 }
