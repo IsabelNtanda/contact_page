@@ -1,6 +1,5 @@
-ScrollReveal({
-  origin:'top',
-  distance:'50px',
-  duration:1500,
+function escrever(event) {
+  event.preventDefault();
 
-}).reveal('#app')
+  console.log("oaaaaaaaaaa")
+}

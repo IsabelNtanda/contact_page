@@ -97,7 +97,24 @@ main {
   display: flex;
   align-items: center;
   gap: 5.2rem;
-  margin-bottom: 6.4rem;
+  margin-bottom: 3.2rem;
+  padding: .5rem;
+  border-radius: 0.8rem;
+}
+
+.group .item{
+  pointer-events: none;
+}
+
+.group.selected {
+      background-color: rgba(255,255,255, 0.03);
+}
+
+.group .contacts img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .group span {
@@ -156,3 +173,8 @@ main {
   border-radius: 999px;
 }
 
+
+p.none {
+  color:   #6e6ebf;
+  text-align: center;
+}

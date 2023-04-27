@@ -6,87 +6,48 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact_page</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <header>
-        <div class="contact-actions">
-          <span>Meu contatos</span>
-          <div class="actions">
-            <a href="cadastro.html">
-              <img src="./assets/images/plus.svg" alt="plus" />
-            </a>
-            <a href="editar.html">
-              <img src="./assets/images/pencil.svg" alt="pencil" />
-            </a>
-
-            <a href="#">
-              <img src="./assets/images/trash.svg" alt="trash not found" />
-            </a>
+      />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact_page</title>
+      <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body onload="getAllUsers()">
+      <div id="app">
+        <header>
+          <div class="contact-actions">
+            <span>Meu contatos</span>
+            <div class="actions">
+              <a href="cadastro.html">
+                <img src="./assets/images/plus.svg" alt="plus" />
+              </a>
+              <a href="editar.html" data-id-edit>
+                <img src="./assets/images/pencil.svg" alt="pencil" />
+              </a>
+              
+              <a data-id-delete onclick="deleteContactInStorage(event)">
+                <img src="./assets/images/trash.svg" alt="trash not found" style="pointer-events: none;" />
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="search">
-          <img src="./assets/images/search.svg" alt="" />
-          <input
+          <div class="search">
+            <img src="./assets/images/search.svg" alt="" />
+            <input
             type="text"
             placeholder="Busque por nome ou por dados de contacto"
-          />
-        </div>
-      </header>
-      <main>
-        <div class="all-groups">
-          <div class="group">
-            <span>A</span>
-            <div class="contacts">
-              <img src="./assets/images/avatar1.png" alt="" />
-              <div class="contacts-details">
-                <strong>Ana Sena</strong>
-                <p>(11) 90876-1234</p>
-              </div>
-            </div>
+            
+            onchange="searchContact(event)"
+            />
           </div>
-
-          <div class="group">
-            <span>A</span>
-            <div class="contacts">
-              <img src="./assets/images/avatar1.png" alt="" />
-              <div class="contacts-details">
-                <strong>Ana Sena</strong>
-                <p>(11) 90876-1234</p>
-              </div>
-            </div>
+        </header>
+        <main>
+          <div class="all-groups">
+            
           </div>
-
-          <div class="group">
-            <span>B</span>
-            <div class="group-wrapper">
-              <div class="contacts">
-                <img src="./assets/images/avatar2.png" alt="" />
-                <div class="contacts-details">
-                  <strong>Bernado Sena</strong>
-                  <p>(11) 90876-1234</p>
-                </div>
-              </div>
-
-              <div class="contacts">
-                <img src="./assets/images/avatar3.png" alt="" />
-                <div class="contacts-details">
-                  <strong>Bernado Sena</strong>
-                  <p>(11) 90876-1234</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
-    <script src="./assets/js/scrollreveal.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
-</html>
+        </main>
+      </div>
+      <script src="./assets/js/scrollreveal.js"></script>
+      <script src="./assets/js/app.js"></script>
+    </body>
+  </html>
