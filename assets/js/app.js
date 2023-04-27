@@ -1,5 +1,5 @@
 // Variaveis globais
-let indexUrl = "file:///C:/Users/DOMINGOS%20NKULA%20PEDRO/Desktop/repo/contact_page/index.html";
+let indexUrl = "/";
 
 
 
