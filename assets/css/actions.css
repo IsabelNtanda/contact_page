@@ -1,10 +1,11 @@
 /*--------------------Cadasto-----------------------*/
-form{
-display: flex;
-flex-direction: column;
-gap: 2rem;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
 }
+
 .field-input {
   width: 100%;
   display: flex;
@@ -12,39 +13,57 @@ gap: 2rem;
   gap: 2rem;
 
 }
-.field-input input{
+
+.field-input input {
   background: #24243d;
   padding: 1.6rem 2.4rem;
   border-radius: 0.5rem;
   border: none;
-  color:var(--text-color);
+  color: var(--text-color);
   transition: all .6s;
 }
+
+.field-input .double-input-box {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem
+}
+
+.field-input .double-input-box>input:nth-child(1) {
+  width: 30%;
+}
+
+.field-input .double-input-box>input:nth-child(1) {
+  width: 70%;
+}
+
 .field-input input:hover,
-.field-input input:focus{
+.field-input input:focus {
   outline: 1px solid var(--text-color);
 }
-input[type='submit']{
-width: fit-content;
-padding: 1.2rem 2.4rem;
-border-radius: 0.5rem;
-border: none;
-background: #24243d;
-color: var(--text-color);
-cursor: pointer;
 
-outline: 1px solid var(--text-color);
-}
-.submit input[type='submit']:hover{
-filter: brightness(1.2);
+input[type='submit'] {
+  width: fit-content;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #24243d;
+  color: var(--text-color);
+  cursor: pointer;
+
+  outline: 1px solid var(--text-color);
 }
 
-.voltar{
-font-size: 3rem;
-position: absolute;
-top: 0;
-right: 0;
-cursor: pointer;
-text-decoration: none;
-color: white
+.submit input[type='submit']:hover {
+  filter: brightness(1.2);
+}
+
+.voltar {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: white
 }

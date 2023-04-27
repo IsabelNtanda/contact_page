@@ -1,48 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/actions.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
-  </head>
-  <body>
-    <div id="app">
-      <main>
-        <a href="index.html" class="voltar">
-          <i class="ph ph-x-circle"></i>
-        </a>
-        <form action="#">
-          <div class="field-input">
-            <input
-              type="text"
-              placeholder="digite o nome do contacto"
-              class="nome"
-            />
-            <input
-              type="text"
-              placeholder="digite o numero do contacto"
-              class="numero"
-            />
-            <input type="text" placeholder="link da imagem" class="foto" />
-          </div>
 
-          <div class="submit">
-            <input type="submit" value="cadastrar" id="submit" />
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/actions.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <main>
+      <a href="index.html" class="voltar">
+        <i class="ph ph-x-circle"></i>
+      </a>
+      <form action="#">
+        <div class="field-input">
+          <input type="text" placeholder="Digite o nome do contacto" class="nome" />
+          <div class="double-input-box">
+            <input type="text" placeholder="Cód." class="numero">
+            <input type="text" placeholder="Digite o numero do contacto" class="numero" />
           </div>
-        </form>
-      </main>
-    </div>
-    <script src="./assets/js/scrollreveal.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+          <input type="text" placeholder="Link da imagem" class="foto" />
+        </div>
+
+        <div class="submit">
+          <input type="submit" value="Cadastrar" id="submit" />
+        </div>
+      </form>
+    </main>
+  </div>
+  <script src="./assets/js/scrollreveal.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
