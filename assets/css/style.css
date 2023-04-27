@@ -121,7 +121,7 @@ main {
 .group-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 2rem;
 }
 .contacts {
   display: flex;
