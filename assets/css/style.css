@@ -195,3 +195,8 @@ p.none {
   content: '';
   visibility: hidden;
 }
+
+.link-disable {
+  filter: opacity(0.3);
+  pointer-events: none
+}
