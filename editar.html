@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
   </head>
   
-  <body onload="contactGetDataUser(event)">
+  <body onload="window.contactGetDataUser(event)">
     <div id="app" >
       <main>
         <a href="index.html" class="voltar">
@@ -31,16 +31,14 @@
           </div>
           
           <div class="submit">
-            <input type="submit" value="Editar" id="contact-submit" onclick="editContact(event)" />
-            <!-- <button>Deletar</button> -->
+            <input type="submit" value="Editar" id="contact-submit" onclick="window.editContact(event)" />
           </div>
         </form>
       </main>
     </div>
     
-    <script src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
     <script src="./assets/js/scrollreveal.js"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     
   </body>
   
