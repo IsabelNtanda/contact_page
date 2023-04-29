@@ -1,6 +1,8 @@
 // Importando funções de outro arquivo
-import { filterContact, filterContactById, addContact, deleteContact, updateContact } from './app.js';
+import functionInitial, { filterContact, filterContactById, addContact, deleteContact, updateContact } from './app.js';
 let indexUrl = "/";
+
+functionInitial
 
 window.addNewContact = (event) => {
 	event.preventDefault();

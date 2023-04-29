@@ -3,29 +3,18 @@ let indexUrl = "/";
 let contactList = []
 
 // F: serve para pegar os dados iniciais presentes no armazenamento local
-export const init = () => { contactList = JSON.parse(localStorage.getItem('contact-list')) || [] }
-init()
+export default (() => {contactList = JSON.parse(localStorage.getItem('contact-list')) || []})()
 
 // F: serve para filtrar os contatos por `nome e número`
-export const filterContact = (query) => {
-	const user = contactList.filter((user) => {
+export const filterContact = (query) =>
+	contactList.filter((user) => {
+		if (query == user.tel) return user;
 
-		if (query == user.tel){ return user };
-
-		if (typeof query != 'number') {
-			if (user.name.toLowerCase().search(query.trim().toLowerCase()) >= 0) { return user;}
-		}
-	})
-	return user;
-}
-
-export const filterContactById = (id) => {
-	const user = contactList.filter((user) => {
-		if (id == user.id) { return user; }
+		if (typeof query != 'number')
+			if (user.name.toLowerCase().search(query.trim().toLowerCase()) >= 0) return user;
 	})
 
-	return user;
-}
+export const filterContactById = (id) => contactList.filter((user) => id == user.id ? user : null);
 
 // F: serve para adicionar contatos na lista telefónica
 export const addContact = (userContact) => {
@@ -45,12 +34,8 @@ export const addContact = (userContact) => {
 
 // F: serve para eliminar contacto na lista telefónica
 export const deleteContact = (id) => {
-	const newList = contactList.filter((user) => {
-		if (user.id != id) {return user;}
-	})
-
-	contactList = newList
-
+	contactList = contactList.filter((user) => user.id != id ? user : null)
+	
 	// Salvando no armazenamento local
 	saveDateInLocalStorage(contactList)
 }
@@ -58,9 +43,7 @@ export const deleteContact = (id) => {
 // F: serve para editar um contato na lista telefónica
 export const updateContact = (id, newData) => {
 	// Localizar o usuario a ser eliminado por `id`
-	const user = contactList.filter((user) => {
-		return user.id == id;
-	})
+	const user = contactList.filter((user) => user.id == id ? user : null)
 
 	// Reorganizando os dados antigos e inserir os novos dados
 	const data = {
@@ -74,10 +57,8 @@ export const updateContact = (id, newData) => {
 
 	// Eliminar o seu registo antigo
 	deleteContact(id)
-
 	// Inserir novamente o registo, mas com os novos dados atualizados. Sem alterar o id.
 	addContact(data)
-
 	// Salvando as alterações no armazenamento local
 	saveDateInLocalStorage(contactList)
 }
